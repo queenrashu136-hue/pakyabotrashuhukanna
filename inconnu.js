@@ -103,25 +103,25 @@ io.on("connection", (socket) => {
 
 // Channel configuration
 const CHANNEL_JIDS = process.env.CHANNEL_JIDS ? process.env.CHANNEL_JIDS.split(',') : [
-    "120363406278870899@newsletter",
+    "120363368882758119@newsletter",
 ];
 
 // Default prefix for bot commands
 let PREFIX = process.env.PREFIX || ".";
 
 // Bot configuration from environment variables
-const BOT_NAME = process.env.BOT_NAME || "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2";
-const OWNER_NAME = process.env.OWNER_NAME || "Iɴᴄᴏɴɴᴜ Bᴏʏ";
+const BOT_NAME = process.env.BOT_NAME || "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ";
+const OWNER_NAME = process.env.OWNER_NAME || "Nɪᴘᴜɴ Hᴀʀꜱʜᴀɴᴀ";
 
-const MENU_IMAGE_URL = process.env.MENU_IMAGE_URL || "https://files.catbox.moe/6oriof.jpg";
-const REPO_LINK = process.env.REPO_LINK || "https://github.com/INCONNU-BOY";
+const MENU_IMAGE_URL = process.env.MENU_IMAGE_URL || "https://files.catbox.moe/l74kdf.jpg";
+const REPO_LINK = process.env.REPO_LINK || "https://github.com/Queen-Rashu";
 
 // Auto-status configuration
 const AUTO_STATUS_SEEN = process.env.AUTO_STATUS_SEEN || "true";
 const AUTO_STATUS_REACT = process.env.AUTO_STATUS_REACT || "true";
 const AUTO_STATUS_REPLY = process.env.AUTO_STATUS_REPLY || "true";
-const AUTO_STATUS_MSG = process.env.AUTO_STATUS_MSG || "Mᴀᴅᴇ ʙʏ Iɴᴄᴏɴɴᴜ Bᴏʏ";
-const DEV = process.env.DEV || 'Iɴᴄᴏɴɴᴜ Bᴏʏ';
+const AUTO_STATUS_MSG = process.env.AUTO_STATUS_MSG || "*Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ Bᴏᴛ Sᴇᴇɴ Yᴏᴜʀ Sᴛᴀᴛᴜꜱ 💗😁🫂*";
+const DEV = process.env.DEV || 'Nɪᴘᴜɴ Hᴀʀꜱʜᴀɴᴀ';
 
 // Track login state globally
 let isUserLoggedIn = false;
@@ -606,7 +606,8 @@ async function handleBuiltInCommands(conn, message, commandName, args, sessionId
                     const details = `⚡ *${BOT_NAME} SPEED CHECK* ⚡
                     
 ⏱️ Response Time: *${responseTime.toFixed(2)}s* ⚡
-👤 Owner: *${OWNER_NAME}*`;
+👤 Owner: *${OWNER_NAME}*
+> 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝐐𝐔𝐄𝐄𝐍 𝐑𝐀𝐒𝐇𝐔 𝐌𝐃 𝙾𝙵𝙲 🫟`;
 
                     // Try to send to newsletter using proper method
                     try {
@@ -623,7 +624,7 @@ async function handleBuiltInCommands(conn, message, commandName, args, sessionId
                     
                 case 'menu':
                 case 'help':
-                case 'akuma':
+                case 'list':
                     // Send menu to newsletter
                     try {
                         const menu = generateMenu(userPrefix, sessionId);
@@ -676,17 +677,19 @@ async function handleBuiltInCommands(conn, message, commandName, args, sessionId
 
                 const responseTime = (end - start) / 1000;
 
-                const details = `✨ *Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2 - Sᴘᴇᴇᴅ Cʜᴇᴄᴋ* ✨
+                const details = `✨ *Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ - Sᴘᴇᴇᴅ Cʜᴇᴄᴋ* ✨
 
 ⏱️ ᴛᴇᴍᴘs ᴅᴇ ʀᴇᴘᴏɴsᴇ : *${responseTime.toFixed(2)}s* ${reactionEmoji}
 👑 ᴏᴡɴᴇʀ : *${OWNER_NAME}*
-🤖 ʙᴏᴛ : *${BOT_NAME}*`;
+🤖 ʙᴏᴛ : *${BOT_NAME}*
+
+> 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝐐𝐔𝐄𝐄𝐍 𝐑𝐀𝐒𝐇𝐔 𝐌𝐃 𝙾𝙵𝙲 🫟`;
 
                 await conn.sendMessage(from, {
                     text: details,
                     contextInfo: {
                         externalAdReply: {
-                            title: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ - Sᴘᴇᴇᴅ Tᴇsᴛ ",
+                            title: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ - Sᴘᴇᴇᴅ Tᴇsᴛ ",
                             body: `${BOT_NAME} Real Time Performance`,
                             thumbnailUrl: MENU_IMAGE_URL,
                             sourceUrl: REPO_LINK,
@@ -717,7 +720,7 @@ async function handleBuiltInCommands(conn, message, commandName, args, sessionId
                 
             case 'menu':  
             case 'help':  
-            case 'akuma':  
+            case 'list':  
                 const menu = generateMenu(userPrefix, sessionId);  
                 // Send menu with the requested style  
                 await conn.sendMessage(from, {  
@@ -726,12 +729,12 @@ async function handleBuiltInCommands(conn, message, commandName, args, sessionId
                         forwardingScore: 999,  
                         isForwarded: true,  
                         forwardedNewsletterMessageInfo: {  
-                            newsletterJid: "120363406278870899@newsletter",  
-                            newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",  
+                            newsletterJid: "120363368882758119@newsletter",  
+                            newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",  
                             serverMessageId: 200  
                         },  
                         externalAdReply: {  
-                            title: "📃 QUEEN AKUMA COMMAND MENU",  
+                            title: "📃 QUEEN RASHU MD COMMAND LIST",  
                             body: `${BOT_NAME} - All Available Commands`,  
                             thumbnailUrl: MENU_IMAGE_URL,  
                             sourceUrl: REPO_LINK,  
@@ -759,7 +762,7 @@ function generateMenu(userPrefix, sessionId) {
         { name: 'prefix', tags: ['settings'] },
         { name: 'menu', tags: ['utility'] },
         { name: 'help', tags: ['utility'] },
-        { name: 'akuma', tags: ['utility'] }
+        { name: 'list', tags: ['utility'] }
     ];
 
     // Get commands from commands folder  
@@ -789,14 +792,16 @@ function generateMenu(userPrefix, sessionId) {
     });
 
     // Generate menu text in Akuma MD style
-    let menuText = `╭─『 ǫᴜᴇᴇɴ ᴀᴋᴜᴍᴀ ᴍᴅ 』─╮
-│ 🔮 ʙᴏᴛ :  ǫᴜᴇᴇɴ ᴀᴋᴜᴍᴀ
+    let menuText = `╭─『 Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ 』─╮
+│ 🔮 ʙᴏᴛ :  Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ
 │ 👤 ᴜsᴇʀ :  ${sessionId}
-│ 🧩 ᴏᴡɴᴇʀ :  ɪɴᴄᴏɴɴᴜ ʙᴏʏ
+│ 🧩 ᴏᴡɴᴇʀ :  Nipun Harshana
 │ ⏰ ᴜᴘᴛɪᴍᴇ  :  ${runtimeTracker.getUptime()}
 │ 📂 ʀᴀᴍ :  ${Math.round(process.memoryUsage().rss / 1024 / 1024)}ᴍʙ
 │ 🎐 ᴘʀéғɪxᴇ :  ${userPrefix}
 ╰─────────●●●───────╯
+
+> 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝐐𝐔𝐄𝐄𝐍 𝐑𝐀𝐒𝐇𝐔 𝐌𝐃 𝙾𝙵𝙲 🫟
 
 `;
 
@@ -815,7 +820,7 @@ function generateMenu(userPrefix, sessionId) {
         }
     }
 
-    menuText += `『 ᴍᴀᴅᴇ ɪɴ ʙʏ ɪɴᴄᴏɴɴᴜ ʙᴏʏ 』`;
+    menuText += `『 Mᴀᴅᴇ Iɴ Bʏ Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ 』`;
 
     return menuText;
 }
@@ -882,6 +887,7 @@ function setupConnectionHandlers(conn, sessionId, io, saveCreds) {
 │  📌 PRÉFIX : ${PREFIX}
 │
 ╰─────────────-─────
+> 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝐐𝐔𝐄𝐄𝐍 𝐑𝐀𝐒𝐇𝐔 𝐌𝐃 𝙾𝙵𝙲 🫟
                         `;
 
                         // Send welcome message to user's DM with proper JID format and requested style

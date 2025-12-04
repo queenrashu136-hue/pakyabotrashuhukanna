@@ -17,8 +17,8 @@ module.exports = {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: "120363406278870899@newsletter",
-                        newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+                        newsletterJid: "120363368882758119@newsletter",
+                        newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
                         serverMessageId: 200
                     }
                 }
@@ -51,7 +51,7 @@ module.exports = {
 💨 *Wind Speed*: ${data.wind.speed} m/s
 🔽 *Pressure*: ${data.main.pressure} hPa
 
-*© Mᴀᴅᴇ ʙʏ Iɴᴄᴏɴɴᴜ Bᴏʏ*
+> 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝐐𝐔𝐄𝐄𝐍 𝐑𝐀𝐒𝐇𝐔 𝐌𝐃 𝙾𝙵𝙲 🫟
 `;
             return await sendMessageWithContext(weather);
         } catch (e) {

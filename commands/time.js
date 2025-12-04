@@ -83,8 +83,8 @@ module.exports = {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363406278870899@newsletter",
-            newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+            newsletterJid: "120363368882758119@newsletter",
+            newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
             serverMessageId: 200
           }
         }
@@ -114,7 +114,7 @@ module.exports = {
         if (!tzName) {
           try {
             const nomUrl = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(locationRaw)}&format=json&limit=1&addressdetails=1`;
-            const nomOpts = { headers: { "User-Agent": "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2 - Time Command" } };
+            const nomOpts = { headers: { "User-Agent": "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ - Time Command" } };
             const nom = await fetchJson(nomUrl, nomOpts, 2, 8000);
             if (Array.isArray(nom) && nom.length > 0) {
               const { lat, lon } = nom[0];

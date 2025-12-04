@@ -17,8 +17,8 @@ module.exports = {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: "120363406278870899@newsletter",
-                        newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+                        newsletterJid: "120363368882758119@newsletter",
+                        newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
                         serverMessageId: 200
                     }
                 }
@@ -27,7 +27,7 @@ module.exports = {
 
         try {
             if (!q) {
-                return await sendMessageWithContext("❎ Please provide a TikTok username.\n\n*Example:* .ttstalk Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2");
+                return await sendMessageWithContext("❎ Please provide a TikTok username.\n\n*Example:* .ttstalk Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ");
             }
 
             // React 📱
@@ -59,7 +59,7 @@ module.exports = {
 ┃ 🆔 *ID*: ${user.id || "N/A"}
 ┃ 🔗 *Profile*: https://www.tiktok.com/@${user.username}
 ╰━━━━━━━━━━━━━━━━━━┈⊷
-> © Mᴀᴅᴇ ʙʏ Iɴᴄᴏɴɴᴜ Bᴏʏ`;
+> 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝐐𝐔𝐄𝐄𝐍 𝐑𝐀𝐒𝐇𝐔 𝐌𝐃 𝙾𝙵𝙲 🫟`;
 
             if (user.avatar) {
                 await conn.sendMessage(from, {
@@ -69,7 +69,7 @@ module.exports = {
                         forwardingScore: 999,
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
-                            newsletterJid: "120363406278870899@newsletter",
+                            newsletterJid: "120363368882758119@newsletter",
                             newsletterName: "Mᴀᴅᴇ ʙʏ Iɴᴄᴏɴɴᴜ Bᴏʏ",
                             serverMessageId: 200
                         }

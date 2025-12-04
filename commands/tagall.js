@@ -45,7 +45,7 @@ module.exports = {
                 text += `⟢ @${id.split('@')[0]}\n`;
             });
 
-            text += `\n⟢ Powered by *Qᴜᴇᴇɴ*`;
+            text += `\n⟢ Powered by *Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ*`;
 
             await conn.sendMessage(from, {
                 text,

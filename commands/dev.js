@@ -28,10 +28,9 @@ module.exports = {
 ╭───『 ⚙️ 𝗧𝗘𝗖𝗛𝗡𝗜𝗖𝗔𝗟 𝗜𝗡𝗙𝗢 』
 │
 │ 🤖 *BOT DETAILS:*
-│ ├─ Name: Queen Akuma V2
-│ ├─ Developer: inconnu boy
+│ ├─ Name: Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ
+│ ├─ Developer: Nipun
 │ ├─ Version: 2.0.0
-│ ├─ Library: Baileys MD
 │ ├─ Platform: Node.js ${process.version}
 │ └─ Uptime: ${hours}h ${minutes}m ${seconds}s
 │
@@ -57,15 +56,13 @@ module.exports = {
 │ └─ Express Server
 │
 │ 📞 *CONTACT DEVELOPER:*
-│ ├─ WhatsApp: +554488138425
-│ ├─ Instagram: @hoshi_shishi
-│ ├─ GitHub: INCONNU-BOY
-│ └─ Email: inconnuboy39@gmail.com
+│ ├─ WhatsApp: +94764085107
+│ └─ Email: realqueenrashu12@gmail.com
 │
 ╰─────────────-─────
       `.trim();
 
-      const devPp = "https://files.catbox.moe/6oriof.jpg";
+      const devPp = "https://files.catbox.moe/l74kdf.jpg";
 
       await conn.sendMessage(from, {
         image: { url: devPp },
@@ -74,8 +71,8 @@ module.exports = {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363406278870899@newsletter",
-            newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+            newsletterJid: "120363368882758119@newsletter",
+            newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
             serverMessageId: 302
           }
         }
@@ -94,8 +91,8 @@ module.exports = {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363406278870899@newsletter",
-            newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2", 
+            newsletterJid: "120363368882758119@newsletter",
+            newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ", 
             serverMessageId: 303
           }
         }

@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 module.exports = {
-    pattern: "play",
+    pattern: "song",
     desc: "Search and download Spotify/YouTube tracks as playable audio",
     react: "🎧",
     category: "music",
@@ -16,8 +16,8 @@ module.exports = {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: "120363406278870899@newsletter",
-                        newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+                        newsletterJid: "120363368882758119@newsletter",
+                        newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
                         serverMessageId: 200
                     }
                 }
@@ -143,7 +143,7 @@ module.exports = {
                             `👤 *Artist/Channel:* ${channel || "Unknown"}\n` +
                             `⏱️ *Duration:* ${duration || "Unknown"}\n` +
                             `🌐 *Source:* ${apiUsed || "API"}\n\n` +
-                            `> Mᴀᴅᴇ ʙʏ Iɴᴄᴏɴɴᴜ Bᴏʏ`;
+                            `> 𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝐐𝐔𝐄𝐄𝐍 𝐑𝐀𝐒𝐇𝐔 𝐌𝐃 𝙾𝙵𝙲 🫟`;
 
             let thumbBuffer;
             if (thumbnail) {
@@ -165,8 +165,8 @@ module.exports = {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: "120363406278870899@newsletter",
-                        newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+                        newsletterJid: "120363368882758119@newsletter",
+                        newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
                         serverMessageId: 200
                     }
                 }

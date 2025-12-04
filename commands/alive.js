@@ -31,7 +31,7 @@ module.exports = {
 
       // Alive message
       const caption = `
-╭───『 𝐒𝐘𝐒𝐓𝐄𝐌 𝐒𝐓𝐀𝐓𝐔𝐒 』
+╭───『 𝐐𝐔𝐄𝐄𝐍 𝐑𝐀𝐒𝐇𝐔 𝐌𝐃 𝐀𝐋𝐈𝐕𝐄 』
 │ Bot : *Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ*
 │ Uptime : *${days}d ${hours}h ${minutes}m ${seconds}s*
 │ User : ${senderTag}

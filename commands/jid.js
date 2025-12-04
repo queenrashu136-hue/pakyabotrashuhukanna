@@ -14,15 +14,15 @@ module.exports = {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: "120363406278870899@newsletter",
-                        newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+                        newsletterJid: "120363368882758119@newsletter",
+                        newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
                         serverMessageId: 200
                     },
                     externalAdReply: {
                         title: "🆔 JID Information",
-                        body: "Mᴀᴅᴇ ʙʏ Iɴᴄᴏɴɴᴜ Bᴏʏ",
-                        thumbnailUrl: "https://files.catbox.moe/6oriof.jpg", // Replace with your image URL
-                        sourceUrl: "https://github.com/Brenaldmedia/SUNSET",      // Replace with your repo link
+                        body: "Made By Nipun Harshana",
+                        thumbnailUrl: "https://files.catbox.moe/l74kdf.jpg", // Replace with your image URL
+                        sourceUrl: "https://github.com/rashu",      // Replace with your repo link
                         mediaType: 1,
                         renderLargerThumbnail: true
                     }

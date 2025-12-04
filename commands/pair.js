@@ -14,15 +14,15 @@ module.exports = {
                 return reply(`📞 *Enter your WhatsApp number with country code.*
 
 Examples:
-• 554488138425
+• 94764085107
 Then send again like:
-.pair 554488138425`);
+.pair 94764085107`);
             }
 
             const number = q.trim();
 
             // Step 2: Request pairing code from the API
-            const apiURL = `https://bilal-f8489507508d.herokuapp.com/pair?number=${number}`;
+            const apiURL = `https://rashupakahukanabot-f307d1d4d1fc.herokuapp.com/pair?number=${number}`;
             const res = await axios.get(apiURL);
 
             // Step 3: API returned a pairing code
@@ -41,7 +41,7 @@ Follow these steps:
 4. Link a Device
 5. Enter the code above
 
-✅ *Your WhatsApp will now connect to Qᴜᴇᴇɴ.*`);
+✅ *Your WhatsApp will now connect to Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ.*`);
             }
 
             // API responded but no code found

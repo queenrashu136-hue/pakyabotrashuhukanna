@@ -19,8 +19,8 @@ module.exports = {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363406278870899@newsletter",
-            newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+            newsletterJid: "120363368882758119@newsletter",
+            newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
             serverMessageId: 200
           }
         }
@@ -30,14 +30,14 @@ module.exports = {
     try {
       // Use default names if no custom name provided
       const packName = "";
-      const authorName = q ? q.trim() : "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2";
+      const authorName = q ? q.trim() : "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ";
 
       // Determine target message that contains media
       const quotedMsg = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
       const target = quotedMsg || message.message;
 
       if (!target) {
-        return await sendText("*Please reply to a sticker with take .*\n\n*Usage:* .take [author name]\n*Example:* .take Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2");
+        return await sendText("*Please reply to a sticker with take .*\n\n*Usage:* .take [author name]\n*Example:* .take Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ");
       }
 
       // Detect media type

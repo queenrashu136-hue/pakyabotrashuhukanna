@@ -37,8 +37,8 @@ module.exports = {
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-              newsletterJid: "120363406278870899@newsletter",
-              newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+              newsletterJid: "120363368882758119@newsletter",
+              newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
               serverMessageId: 400
             }
           }
@@ -57,8 +57,8 @@ module.exports = {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363406278870899@newsletter",
-            newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+            newsletterJid: "120363368882758119@newsletter",
+            newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
             serverMessageId: 401
           }
         }
@@ -79,8 +79,8 @@ module.exports = {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363406278870899@newsletter",
-            newsletterName: "Qᴜᴇᴇɴ Aᴋᴜᴍᴀ V2",
+            newsletterJid: "120363368882758119@newsletter",
+            newsletterName: "Qᴜᴇᴇɴ Rᴀꜱʜᴜ Mᴅ",
             serverMessageId: 402
           }
         }
